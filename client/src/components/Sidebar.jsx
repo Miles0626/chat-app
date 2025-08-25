@@ -85,7 +85,7 @@ const Sidebar = () => {
             }`}
           >
             <img
-              src={user?.profilePic || assets.avatar_icon}
+              src={user?.profilePic || "/avatar_icon.png"}
               alt=""
               className="w-[35px] aspect-[1/1] rounded-full"
             />

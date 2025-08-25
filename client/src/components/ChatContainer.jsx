@@ -55,7 +55,7 @@ const ChatContainer = () => {
       {/* header */}
       <div className="flex items-center gap-3 py-3 mx-4 border-b border-stone-500">
         <img
-          src={selectedUser.profilePic || assets.avatar_icon}
+          src={selectedUser.profilePic || "/avatar_icon.png"}
           alt=""
           className="w-8 rouunded-full"
         ></img>
@@ -104,8 +104,8 @@ const ChatContainer = () => {
               <img
                 src={
                   msg.senderId === authUser?._id
-                    ? authUser?.profilePic || assets.avatar_icon
-                    : selectedUser?.profilePic || assets.avatar_icon
+                    ? authUser?.profilePic || "/avatar_icon.png"
+                    : selectedUser?.profilePic || "/avatar_icon.png"
                 }
                 alt=""
                 className="w-7 rounded-full"
